@@ -59,7 +59,7 @@ All parameters are optional.
 For instance, if you send a request with parameters _title = "hoax"_ and _author = "Ruffo"_ it returns a json:
 
 ```
-{"item-total-number":10,
+{"item-total-number":1,
 
 "item-list":[
 
@@ -73,8 +73,7 @@ For instance, if you send a request with parameters _title = "hoax"_ and _author
 "clustering":0.0539683,
 "indegree":16,
 "pagerank":3.98385e-05
-},
-... ]
-
 }
+
+]}
 ```
