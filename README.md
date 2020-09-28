@@ -56,7 +56,7 @@ You send a request with a list of parameters:
 
 All parameters are optional.
 
-It returns a json:
+For instance, if you send a request with parameters _title = "hoax"_ and _author = "Ruffo"_ it returns a json:
 
 ```
 {"item-total-number":10,
