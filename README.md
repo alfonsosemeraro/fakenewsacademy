@@ -8,7 +8,7 @@
 4. Install R packages _data.table_, _igraph_, _bit64_ and _rjson_.
 5. Install python 3
 6. Install python packages from requirements.txt (run _pip3 isntall -r requirements.txt_)
-7. Run setup.py_
+7. Run _setup.py_
 8. Run _run.py_
 9. Go to localhost:5000
 
