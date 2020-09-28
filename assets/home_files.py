@@ -15,6 +15,7 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import CountVectorizer
 from string import ascii_lowercase, ascii_uppercase
 import random
+import datetime
 
 
 def rand_code(num):
@@ -101,11 +102,14 @@ def nations_inside(fake):
 
 
 def check_years(title, abstract):
+
+    current_year = datetime.datetime.now().year
+
     text = title + ' ' + abstract
 
     text = re.sub(r'[^a-zA-Z0-9 ]', '', text)
     x = [int(a) for a in text.split(' ') if a.isdigit()]
-    x = [str(a) for a in x if a > 1900 and a < 2500]
+    x = [str(a) for a in x if a > 1900 and a <= current_year]
 
     return ', '.join(x)
 
