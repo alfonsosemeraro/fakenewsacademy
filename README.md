@@ -63,9 +63,18 @@ It returns a json:
 
 "item-list":[
 
-{"abstract":"spread of misinformation, rumors and hoaxes. The goal of this work is to introduce a simple modeling framework to study the diffusion of hoaxes and in particular how the availability of debunking information may contain their diffusion. As traditionally done in the mathematical modeling of information diffusion processes, we regard hoaxes as viruses: users can become infected if they are exposed to them, and turn into spreaders as a consequence. Upon verification, users can also turn into non-believers and spread the same attitude with a mechanism analogous to that of the hoax-spreaders. Both believers and non-believers, as time passes, can return to a susceptible state. Our model is characterized by four parameters: spreading rate, gullibility, probability to verify a hoax, and that to forget one's current belief. Simulations on homogeneous, heterogeneous, and real networks for a wide range of parameters values reveal a threshold for the fact-checking probability that guarantees the complete removal of the hoax from the network. Via a mean field approximation, we establish that the threshold value does not depend on the spreading rate but only on the gullibility and forgetting probability. Our approach allows to quantitatively gauge the minimal reaction necessary to eradicate a hoax.","author":"Marcella Tambuscio (University of Turin), Giancarlo Ruffo (University of Turin), Alessandro Flammini (Indiana University), Filippo Menczer (Indiana University)","betweenness":45745.5,"cit":81,"clustering":0.0539683,"indegree":16,"pagerank":3.98385e-05,"paper_id":"1105550512","title":"Fact-checking Effect on Viral Hoaxes: A Model of Misinformation Spread in Social Networks","year":2015},
+{"paper_id":"1105550512",
+"title":"Fact-checking Effect on Viral Hoaxes: A Model of Misinformation Spread in Social Networks",
+"year":2015,
+"abstract":"spread of misinformation, rumors and hoaxes. The goal of this work is to introduce a simple modeling framework to study the diffusion of hoaxes and in particular how the availability of debunking information may contain their diffusion. As traditionally done in the mathematical modeling of information diffusion processes, we regard hoaxes as viruses: users can become infected if they are exposed to them, and turn into spreaders as a consequence. Upon verification, users can also turn into non-believers and spread the same attitude with a mechanism analogous to that of the hoax-spreaders. Both believers and non-believers, as time passes, can return to a susceptible state. Our model is characterized by four parameters: spreading rate, gullibility, probability to verify a hoax, and that to forget one's current belief. Simulations on homogeneous, heterogeneous, and real networks for a wide range of parameters values reveal a threshold for the fact-checking probability that guarantees the complete removal of the hoax from the network. Via a mean field approximation, we establish that the threshold value does not depend on the spreading rate but only on the gullibility and forgetting probability. Our approach allows to quantitatively gauge the minimal reaction necessary to eradicate a hoax.",
+"author":"Marcella Tambuscio (University of Turin), Giancarlo Ruffo (University of Turin), Alessandro Flammini (Indiana University), Filippo Menczer (Indiana University)",
+"betweenness":45745.5,
+"cit":81,
+"clustering":0.0539683,
+"indegree":16,
+"pagerank":3.98385e-05
+},
+... ]
 
-...
-
-],}
+}
 ```
