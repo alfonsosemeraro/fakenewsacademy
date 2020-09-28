@@ -1,4 +1,4 @@
-# CIMA-shop
+# FakeNews Academy
 
 ## Deploy on localhost
 
