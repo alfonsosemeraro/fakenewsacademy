@@ -1,0 +1,6 @@
+{
+  "db_user": "root",
+  "db_password": "root",
+  "host": "localhost",
+  "db_name": "fakenewsacademy"
+}
