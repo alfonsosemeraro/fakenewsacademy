@@ -12,10 +12,11 @@
 8. Run _run.py_
 9. Go to localhost:5000
 
-You can hit three different addresses:
+## You can hit three different addresses:
 
-*localhost:5000/*
+### localhost:5000/
 Returns a json like:
+```
 {"map_papers":
   {"Afghanistan":6,"Africa":43,"Argentina":1,"Asia":16,"Australia":32,"Austria":3,"Bangladesh":5, ...},
 
@@ -25,11 +26,12 @@ Returns a json like:
 "year_production":
 {"1852":1,"1858":2,"1872":1,"1890": "1", ...}
 }
+```
 
-
-*localhost:5000/paper/<paper_id>*
+### localhost:5000/paper/<paper_id>
 For instance, hitting localhost:5000/paper/1105550512 returns a json like:
 
+```
 {"paper_id":"1105550512",
 "title":"Fact-checking Effect on Viral Hoaxes: A Model of Misinformation Spread in Social Networks",
 "year":2015,
@@ -41,8 +43,9 @@ For instance, hitting localhost:5000/paper/1105550512 returns a json like:
 "indegree":16,
 "pagerank":3.98385e-05
 }
+```
 
-*localhost:5000/search*
+### localhost:5000/search
 You send a request with a list of parameters:
   - title
   - author
@@ -55,6 +58,7 @@ All parameters are optional.
 
 It returns a json:
 
+```
 {"item-total-number":10,
 
 "item-list":[
@@ -64,3 +68,4 @@ It returns a json:
 ...
 
 ],}
+```
