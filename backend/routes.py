@@ -53,18 +53,18 @@ def index():
 @app.route("/search")
 def search():
 
-    title = request.args.get('title') if 'title' in request.args else ''
-    author = request.args.get('author') if 'author' in request.args else ''
+    title = request.args.get('title') if 'title' in request.args else ' '
+    author = request.args.get('author') if 'author' in request.args else ' '
     min_year = request.args.get('min_year') if 'min_year' in request.args else 1850
     max_year = request.args.get('max_year') if 'max_year' in request.args else current_year
     min_cit = request.args.get('min_cit') if 'min_cit' in request.args else 0
     max_cit = request.args.get('max_cit') if 'max_cit' in request.args else 1_000_000
 
     # this would be the true query
-    # s = Search(title = title, author = author, years = (min_year, max_year), cits = (min_cit, max_cit))
+    s = Search(title = title, author = author, years = (min_year, max_year), cits = (min_cit, max_cit))
 
     # mock query
-    s = Search(title = 'hoax', author = 'Ruffo', years = (min_year, max_year), cits = (min_cit, max_cit))
+    # s = Search(title = 'hoax', author = 'Ruffo', years = (min_year, max_year), cits = (min_cit, max_cit))
 
     return jsonify(s)
 
