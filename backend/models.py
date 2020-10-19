@@ -31,3 +31,23 @@ class Papers(db.Model):
         'clustering': self.clustering,
         'pagerank': self.pagerank
         }
+
+class References(db.Model):
+    __table_args__ = {'extend_existing': True}
+    source = db.Column(db.String(15), primary_key=True)
+    target = db.Column(db.String(15), primary_key=True)
+    def __repr__(self):
+        return {
+        'source': self.source,
+        'target': self.target
+        }
+
+class Most_similar(db.Model):
+    __table_args__ = {'extend_existing': True}
+    paper_id = db.Column(db.String(15), primary_key=True)
+    similar = db.Column(db.String(15), primary_key=True)
+    def __repr__(self):
+        return {
+        'paper_id': self.paper_id,
+        'similar': self.similar
+        }

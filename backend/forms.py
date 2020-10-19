@@ -88,6 +88,7 @@ def getSimilarPapers(paper_id):
 
 def getSameAuthorPapers(author, n_papers = 10):
 
+    """ Must unpack authors and search in OR """
     itemData = Papers.query \
         .with_entities(
             Papers.paper_id,

@@ -1,5 +1,4 @@
 import os
-import secrets
 from PIL import Image
 from flask import render_template, request, jsonify
 from backend import app

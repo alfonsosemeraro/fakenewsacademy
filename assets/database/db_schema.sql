@@ -18,3 +18,17 @@ CREATE TABLE `papers` (
   `pagerank` float,
   PRIMARY KEY (`paper_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `references` (
+  `source` varchar(15) NOT NULL,
+  `target` varchar(15) NOT NULL,
+  PRIMARY KEY (`source`, `target`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `most_similar` (
+  `paper_id` varchar(15) NOT NULL,
+  `similar` varchar(15) NOT NULL,
+  PRIMARY KEY (`paper_id`, `similar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
