@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $.getJSON( "assets/data/top_keywords.json", function(data) {
+    //Funzione necessaria per la creazione della word-cloud a 
+    //partire dal un file json
+    $.getJSON( "../assets/data/top_keywords.json", function(data) {
         var result = [];
         var myLabels = [];
         var myData = [];
@@ -22,7 +24,8 @@ $(document).ready(function() {
             fontSize: {
                 from: 0.05,
                 to: 0.02
-            }
+            },
+            autoResize: true
         });
     });
         
