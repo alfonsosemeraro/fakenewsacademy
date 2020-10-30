@@ -1,7 +1,8 @@
 body {
     font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
     font-size: medium;
-    background-color: grey;
+    background-color: white;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -13,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #096E75;
 }
   
 #nav li {
@@ -29,35 +30,39 @@ body {
 }
   
 #nav li a:hover {
-    background-color: #111;
+    background-color: #06C2A9;
+}
+
+img {
+    width: 1440px;
 }
 
 #form {
     width: 500px;
-    border-color: grey;
+    border-color: white;
     border-style: solid;
     border-radius: 1pc;
-    background-color: grey;
+    background-color: white;
     height: 200px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 450px;
+    margin: auto;
 }
 
 .input-field {
     border-style: solid;
-    border-color: rgb(0, 202, 136);
+    border-color: #06C2A9;
     border-radius: 20px;
     width: 495px;
-    background-color: rgb(0, 202, 136);
+    background-color: #06C2A9;
     height: 20px;
     margin-bottom: 10px;
 }
 
 .input-field input {
     float: left;
-    background-color: rgb(0, 202, 136);
+    background-color: #06C2A9;
     border: none;
     width: 420px;
     outline: none;
@@ -74,9 +79,9 @@ input::-webkit-input-placeholder {
 
 .advance-search {
     border-style: solid;
-    border-color: rgb(0, 202, 136);
+    border-color: #06C2A9;
     border-radius: 20px;
-    background-color: rgb(0, 202, 136);
+    background-color: #06C2A9;
     height: 155px;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
@@ -90,50 +95,138 @@ input::-webkit-input-placeholder {
     margin-bottom: 10px;
 }
 
-select {
-    width: 150px;
-    background-color: black;
+.advance-search input {
+    border: none;
     outline: none;
-    color: white;
-    margin-bottom: 20px;
+    margin-left: 5px;
+    border: medium;
+    border-radius: 15px;
+    border-color: #06C2A9;
+}
+
+label strong {
+    float: left;
+    width: 1em;
+    margin-left: 50px;
+}
+
+.row {
+    margin-top: 7px;
+}
+
+.btn {
+    margin-top: 15px;
+}
+
+#info-cont {
+    width: 1000px;
+    margin-left: 200px;
+}
+
+#information {
+    float: left;
+    width: 330px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#information p {
+    width: 150px;
+    margin-left: 90px;
+}
+
+hr {
+    clear: both;
+    width: 500px;
+    margin-bottom: 50px;  
+    border-width:5px;
 }
 
 #container {
     height: 500px;
     margin-bottom: 10px;
-    background-color: white;
+    clear: both;
 }
 
-#myCanvas, #canvas, #myCanvas-max, #canvas-max {
-    background-color: white;
+.myCanv {
+    margin: 0;
+    width: 500px;
+    float: left;
+    margin-bottom: 50px;
 }
 
-#myCanvas, #myCanvas-max, #canvas {
-    margin-bottom: 10px;
+#informations {
+    width: 1000px;
+    margin-left: 200px;
+    font-size: 20px;
 }
 
-#graph {
-    margin-bottom: 10px;
+.art-year {
+    margin-left: 200px;
 }
 
-table {
-    border: 3px solid #dad9d4;
+#canvas {
+    margin-top: 40px;
+}
+
+fieldset {
+    width: 400px;
+    margin: auto;
+    border-color: #096E75;
+    border-radius: 20px;
+    background-color: #06C2A9;
+}
+
+
+#myTable {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 80%; 
 }
 
 thead {
-    background-color:rgb(0, 202, 136);
-}
-
-th {
-    font-weight: bold;
+    background-color: #096E75;
+    color: white;
 }
 
 th, td {
-    border: 1px solid #dad9d4;
-    text-align: left;
-    padding: 1em;
+    border: 1px solid black;
+    width: 7%;
 }
 
+#up {
+    background-image: url("../img/up.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#down {    
+    background-image: url("../img/down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#right {
+    background-image: url("../img/right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#north-east {
+    background-image: url("../img/north_east.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#south-east {  
+    background-image: url("../img/south_east.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#number {
+    visibility: hidden;
+}
 
 button {
     border: solid;
@@ -150,7 +243,6 @@ a {
 
 h1 {
     text-align: center;
-    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -159,31 +251,112 @@ h1 {
     margin: auto;
     text-align: center;
     font-size: 15px;
-    color: white;
-}
-
-#myTable_info, #myTable_paginate,
-#myTable_length, #myTable_filter {
-    color: white;
 }
 
 #art {
-    width: 800px;
-}
+    width: 1000px;
+    margin-left: 200px;
+} 
 
 #art ol {
     list-style-type: square;
 }
 
 #art li a {
-    color: white;
+    color: #096E75;
 }
 
 #art li a:hover {
-    background-color: grey;
-    color: blue;
+    color: #06C2A9;
 }
 
 #paper {
     visibility: hidden;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 700px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .art-year, #info-cont, #informations {
+    margin-left: 50px;
+  }
+  img {
+    width: 1200px;
+  }  
+}
+
+@media only screen and (max-width: 800px) {
+  .art-year {
+    margin-left: 140px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .art-year {
+      margin-left: 70px;
+    }
+    
+    img {
+        height: 400px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .art-year, #informations {
+      margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 1350px) and (max-width: 1370px) {
+    img {
+        width: 1366px; 
+    }
+}
+
+
+@media screen and (min-width: 1900px) and (max-width: 2000px) {
+    .art-year, #info-cont, #informations {
+      margin-left: 450px;
+    }
+    img {
+        width: 1920px;
+        height: 700px;
+    }
 }
