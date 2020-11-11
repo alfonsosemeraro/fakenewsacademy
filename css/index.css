@@ -169,66 +169,34 @@ hr {
     margin-top: 40px;
 }
 
-fieldset {
-    width: 400px;
+#papers {
+    width: 1000px;
     margin: auto;
-    border-color: #096E75;
-    border-radius: 20px;
-    background-color: #06C2A9;
+    clear: both;
+    margin-bottom: 100px;
 }
 
-
-#myTable {
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 80%; 
+#pag, #pag-ord, #pag-cit, #pag-bet, #pag-ind, #pag-clust, #pag-rank {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
 }
 
-thead {
-    background-color: #096E75;
-    color: white;
+#year-aut p {
+    float: left;
+    margin-right: 10px;
 }
 
-th, td {
-    border: 1px solid black;
-    width: 7%;
+#abstr {
+    clear: both;
 }
 
-#up {
-    background-image: url("../img/up.png");
-    background-repeat: no-repeat;
-    background-position: center;
+#paperInfo p {
+    float: left;
+    margin-right: 10px;
 }
 
-#down {    
-    background-image: url("../img/down.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#right {
-    background-image: url("../img/right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#north-east {
-    background-image: url("../img/north_east.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#south-east {  
-    background-image: url("../img/south_east.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#number {
-    visibility: hidden;
-}
-
-button {
+button, input[type="button"] {
     border: solid;
     border-color: white;
     background-color: black;
@@ -262,11 +230,11 @@ h1 {
     list-style-type: square;
 }
 
-#art li a {
+#art li a, #papers a {
     color: #096E75;
 }
 
-#art li a:hover {
+#art li a:hover, #papers a:hover {
     color: #06C2A9;
 }
 
@@ -281,7 +249,7 @@ h1 {
   
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 700px;
+    width: 1000px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -290,7 +258,7 @@ h1 {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 50%;
+    left: 10%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
@@ -310,6 +278,53 @@ h1 {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+#not {
+    text-align: center;
+}
+
+#order {
+    width: 1000px;
+    margin: auto; 
+}
+
+
+#order input {
+    width: 160px;
+}
+
+#simart li, #eqaut li {
+    margin-bottom: 10px;
+}
+
+#my_dataviz {
+    text-align: center;
+}
+
+fieldset {
+    width: 1000px;
+    margin: auto;
+    border-color: #096E75;
+    border-radius: 20px;
+    background-color: #06C2A9;
+    margin-bottom: 20px;
+}
+
+#leg {
+    float: left;
+    margin-left: 30px;
+}
+
+#paper-info {
+    width: 1000px;
+    margin: auto; 
+}
+
+#paper-info p {
+    float: left;
+    margin: auto;
+    margin-left: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
