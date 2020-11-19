@@ -121,7 +121,7 @@ include_once("../common.php");
                 $search = $_REQUEST["title"];
                 $result = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%'");
                 $total_pages = ceil($result->rowCount() / $max_results); 
-                $rows = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%' LIMIT $from, $max_results");
+                $rows = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%' OR abstract LIKE '%$search%' LIMIT $from, $max_results");
                 $pages = "title=$search";
             }
             $maxBet =  $db->query("SELECT betweenness FROM papers ORDER BY betweenness DESC LIMIT 0,1");

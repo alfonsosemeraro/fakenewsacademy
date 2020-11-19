@@ -43,7 +43,7 @@ if (isset($_REQUEST["page"])) {
         $search = $_REQUEST["title"];
         $result = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%'");
         $total_pages = ceil($result->rowCount() / $max_results); 
-        $rows = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%' LIMIT $from, $max_results");
+        $rows = $db->query("SELECT * FROM papers WHERE title LIKE '%$search%' OR abstract LIKE '%$search%' LIMIT $from, $max_results");
     }
     if($rows->rowCount()>0) {
         foreach ($rows as $row) {
