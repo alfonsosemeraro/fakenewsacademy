@@ -76,8 +76,6 @@ include_once("../common.php");
             //le caratteristiche scelte nel form dall'utente.
             $db = db_connect();
             $page = (!isset($_GET['page']))? 1 : $_GET['page']; 
-            $prev = ($page - 1); 
-            $next = ($page + 1);
             $max_results = 10;
             $from = (($page * $max_results) - $max_results); 
             if (isset($_REQUEST["search"])) {
